@@ -1,110 +1,139 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sweet Cupcakes 🍰🧁</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f2; /* Light pink background */
+            color: #6f4f99; /* Purple text color */
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ff66b2; /* Pink text for heading */
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #ff66b2; /* Pink text for subheadings */
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        header {
+            background-color: #ffccff; /* Light pink header background */
+            padding: 40px 20px;
+            border-bottom: 5px solid #ff66b2; /* Pink border */
+        }
+
+        footer {
+            background-color: #ffccff; /* Light pink footer background */
+            padding: 20px;
+            border-top: 5px solid #ff66b2; /* Pink border */
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        /* Section Styles */
+        .intro {
+            background-color: #ffffff; /* White background for the intro section */
+            padding: 40px 20px;
+            border-radius: 10px; /* Rounded corners */
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        .gallery {
+            margin-top: 40px;
+        }
+
+        .cupcake-images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px; /* Adds space between the images */
+        }
+
+        .cupcake-images img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px; /* Rounded corners for images */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for 3D effect */
+            transition: transform 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .cupcake-images img:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em; /* Smaller header on mobile */
+            }
+            h2 {
+                font-size: 2em; /* Smaller subheading on mobile */
+            }
+            .cupcake-images {
+                display: block; /* Stack images vertically on smaller screens */
+            }
+            .cupcake-images img {
+                width: 100%;
+                margin: 10px 0; /* Adds vertical space between images */
+            }
+        }
+
+        /* Styling the additional section */
+        .intro h2 {
+            color: #ff66b2;
+        }
+
+        .intro p {
+            color: #333;
+            font-size: 1.3em;
+        }
+
+        a {
+            color: #ff66b2;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Image styles */
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Welcome to Sweet Cupcakes 🍰</h1>
         <p>Deliciously baked with love 💖</p>
     </header>
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffe6f2; /* Light pink background */
-    color: #6f4f99; /* Purple text color */
-    text-align: center;
-}
-
-h1 {
-    font-size: 3em;
-    color: #ff66b2; /* Pink text for heading */
-    margin-top: 20px;
-}
-
-h2 {
-    font-size: 2.5em;
-    color: #ff66b2; /* Pink text for subheadings */
-    margin: 20px 0;
-}
-
-p {
-    font-size: 1.2em;
-    line-height: 1.5;
-}
-
-header {
-    background-color: #ffccff; /* Light pink header background */
-    padding: 40px 20px;
-    border-bottom: 5px solid #ff66b2; /* Pink border */
-}
-
-footer {
-    background-color: #ffccff; /* Light pink footer background */
-    padding: 20px;
-    border-top: 5px solid #ff66b2; /* Pink border */
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    font-size: 1em;
-}
-
-/* Section Styles */
-.intro {
-    background-color: #ffffff; /* White background for the intro section */
-    padding: 40px 20px;
-    border-radius: 10px; /* Rounded corners */
-    margin: 20px auto;
-    width: 80%;
-}
-
-.gallery {
-    margin-top: 40px;
-}
-
-.cupcake-images {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px; /* Adds space between the images */
-}
-
-.cupcake-images img {
-    width: 300px;
-    height: 200px;
-    border-radius: 10px; /* Rounded corners for images */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for 3D effect */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.cupcake-images img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5em; /* Smaller header on mobile */
-    }
-    h2 {
-        font-size: 2em; /* Smaller subheading on mobile */
-    }
-    .cupcake-images {
-        display: block; /* Stack images vertically on smaller screens */
-    }
-    .cupcake-images img {
-        width: 100%;
-        margin: 10px 0; /* Adds vertical space between images */
-    }
-}
 
     <section class="intro">
         <h2>About Our Cupcakes 🧁</h2>
@@ -124,20 +153,10 @@ footer p {
         <p>Follow us on social media for more sweet updates! 📱🍬</p>
         <p>© 2025 M's Food. All Rights Reserved.</p>
     </footer>
-</body>
-</html>
-<img.src='https://drive.google.com/file/d/1dlgeh0Mq3ypAwT6fIiw06mvZXo0gj-6U/view'>
-<body>
-    
+
     <h2>Welcome to Ms Food! This is a website all about cupcakes.<br> This includes how to bake cupcakes, how to make the buttercream and how to pipe them. <br> Enough with the intro- let's get started! <br>!</h2>
-    
+
     <a href="p2.html">Next page</a>
     <br>
-    
 </body>
-
-
-
-  
 </html>
-
