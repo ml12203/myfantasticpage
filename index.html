@@ -11,6 +11,100 @@
         <h1>Welcome to Sweet Cupcakes 🍰</h1>
         <p>Deliciously baked with love 💖</p>
     </header>
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6f2; /* Light pink background */
+    color: #6f4f99; /* Purple text color */
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff66b2; /* Pink text for heading */
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #ff66b2; /* Pink text for subheadings */
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #ffccff; /* Light pink header background */
+    padding: 40px 20px;
+    border-bottom: 5px solid #ff66b2; /* Pink border */
+}
+
+footer {
+    background-color: #ffccff; /* Light pink footer background */
+    padding: 20px;
+    border-top: 5px solid #ff66b2; /* Pink border */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Section Styles */
+.intro {
+    background-color: #ffffff; /* White background for the intro section */
+    padding: 40px 20px;
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px auto;
+    width: 80%;
+}
+
+.gallery {
+    margin-top: 40px;
+}
+
+.cupcake-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between the images */
+}
+
+.cupcake-images img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for 3D effect */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cupcake-images img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; /* Smaller header on mobile */
+    }
+    h2 {
+        font-size: 2em; /* Smaller subheading on mobile */
+    }
+    .cupcake-images {
+        display: block; /* Stack images vertically on smaller screens */
+    }
+    .cupcake-images img {
+        width: 100%;
+        margin: 10px 0; /* Adds vertical space between images */
+    }
+}
 
     <section class="intro">
         <h2>About Our Cupcakes 🧁</h2>
@@ -47,121 +141,3 @@
   
 </html>
 
-<css>
-
-/* General Styles */
-{
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffe6f2;
-    color: #6f4f99;
-    text-align: center;
-}
-
-h1 {
-    font-size: 3em;
-    color: #ff66b2;
-    margin-top: 20px;
-}
-
-h2 {
-    font-size: 2.5em;
-    color: #ff66b2;
-    margin: 20px 0;
-}
-
-p {
-    font-size: 1.2em;
-    line-height: 1.5;
-}
-
-header {
-    background-color: #ffccff;
-    padding: 40px 20px;
-    border-bottom: 5px solid #ff66b2;
-}
-
-footer {
-    background-color: #ffccff;
-    padding: 20px;
-    border-top: 5px solid #ff66b2;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    font-size: 1em;
-}
-
-/* Section Styles */
-.intro {
-    background-color: #ffffff;
-    padding: 40px 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 80%;
-}
-
-.gallery {
-    margin-top: 40px;
-}
-
-.cupcake-images img {
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.cupcake-images img:hover {
-    transform: scale(1.05);
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5em;
-    }
-    h2 {
-        font-size: 2em;
-    }
-    .cupcake-images {
-        display: block;
-    }
-    .cupcake-images img {
-        width: 100%;
-        margin: 10px 0;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-</css>
